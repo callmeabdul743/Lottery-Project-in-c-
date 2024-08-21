@@ -8,7 +8,7 @@ main(){
     for(int a=0; a<19; a++){
         num=rand()%100+1;
         //remove duplicy
-        for(int j=0; j<=a, j++){
+        for(int j=0; j<=a; j++){
             if(num==person[a]){
                 j=0;
                 num=rand()%100+1;
@@ -16,8 +16,10 @@ main(){
         }
         person[a]=num;
     }
+
+    
     //print the array
     for(int i=0; i<20; i++){
-        cout<<"The person at "<<i+1<<person[i]<<endl;
+        cout<<"The person are: "<<person[i]<<"   "<<i<<endl;
     }
 }
